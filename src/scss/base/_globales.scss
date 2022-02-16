@@ -1,0 +1,60 @@
+@use 'variables' as v; 
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+}
+
+p {
+    color: v.$negro;
+    font-size: 2rem;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+    margin: 0;
+}
+
+.seccion {
+    padding: 2rem 0;
+}
+
+.contact
+{
+    position: fixed;
+    right: 6px;
+    top: 90%;
+    z-index: 20;
+}
+.contact .wpp
+{
+    float: right;
+    clear: right;
+    margin: 6px;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.contact .wpp:hover
+{   
+    transform: scale(1.5) rotate(1turn);
+    transition: all 0.7s ease-in-out;
+}
